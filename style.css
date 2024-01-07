@@ -4,50 +4,60 @@
   color: #333;
   font-family: Lato, sans-serif;
 }
+
 .logo {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
+
 .logo__img {
   width: 100%;
 }
+
 .logo__info {
   font-family: fantasy, cursive;
 }
 
 @media (max-width: 768px) {
-  .logo { 
+  .logo {
     text-align: center;
   }
 }
+
 .main-container {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
+
 .task__title,
 .task__input {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
+
 .add-section__task-wrapper {
   display: flex;
 }
+
 .task-list {
   margin: 0;
   padding: 0px;
 }
-.task-list__item, 
+
+.task-list__item,
 .tasks__title {
   list-style: none;
 }
+
 .task__input,
 .task__button {
   outline: none;
 }
+
 .task__button {
   background: none;
   border: 0px;
@@ -57,9 +67,11 @@
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
+
 .task__button:hover {
   color: #3a3a3a;
 }
+
 /* Heading */
 .tasks__title,
 .add-section__title[for="new-task"] {
@@ -71,6 +83,7 @@
   margin: 0;
   text-transform: uppercase;
 }
+
 .task__input[type="text"] {
   margin: 0;
   font-size: 18px;
@@ -83,6 +96,7 @@
   font-family: Lato, sans-serif;
   color: #888;
 }
+
 .task__input[type="text"]:focus {
   color: #333;
 }
@@ -92,6 +106,7 @@
   display: block;
   margin: 0 0 20px;
 }
+
 #new-task {
   width: 318px;
 }
@@ -105,6 +120,7 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .task-list__item > * {
   vertical-align: middle;
 }
@@ -112,20 +128,24 @@
 .task__mark[type="checkbox"] {
   margin: 0 10px;
 }
+
 .task__title {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
+
 .task__input_edit[type="text"] {
   width: 226px;
 }
+
 .remove__img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
+
 .remove__img:hover {
   transform: rotateZ(0);
 }
@@ -141,7 +161,7 @@
   display: none;
 }
 
-.task-list__item_edit .task__input_edit[type=text] {
+.task-list__item_edit .task__input_edit[type="text"] {
   display: inline-block;
   width: 224px;
 }
